@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<div class="loader-container" style="z-index: 9999">
+    <div class="lds-grid"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+</div>
+<html lang="en">
+<head>
+    <meta name="theme-color" content="#fa0">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hot burger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Want to eat?"/>
+   <meta name="keywords" content="noel,noel khantsiwlin,web developer,noel khant,noelkhant,burger,burger project,burger,shop,pizza,spagete,hot burger"/>
+    <meta name="author" content="Noel Developer Team"/>
+
+
+    <!-- Facebook and Twitter integration -->
+    <meta property="og:title" content="Want to eat?"/>
+    <meta property="og:image" content="site-ss.png"/>
+    <meta property="og:url" content="http://noel-burger.netlify.app/"/>
+    <meta property="og:site_name" content="Burger Projectt"/>
+    <meta property="og:description" content="Grab A FastFood"/>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <style>
+        .loader-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            z-index: 2000;
+        }
+        .lds-grid {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.lds-grid div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fa0;
+  animation: lds-grid 1.2s linear infinite;
+}
+.lds-grid div:nth-child(1) {
+  top: 8px;
+  left: 8px;
+  animation-delay: 0s;
+}
+.lds-grid div:nth-child(2) {
+  top: 8px;
+  left: 32px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(3) {
+  top: 8px;
+  left: 56px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+  top: 32px;
+  left: 8px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(5) {
+  top: 32px;
+  left: 32px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(6) {
+  top: 32px;
+  left: 56px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(7) {
+  top: 56px;
+  left: 8px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(8) {
+  top: 56px;
+  left: 32px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(9) {
+  top: 56px;
+  left: 56px;
+  animation-delay: -1.6s;
+}
+@keyframes lds-grid {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+    
+
+    </style>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="vendor/animate_it/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="container-fluid overflow-hidden site-nav p-md-0">
+        <div class="row">
+            <div class="col-12 px-lg-0 my-2 my-lg-0 d-flex align-items-center justify-content-around">
+                 <nav class="navbar align-items-start pt-0 w-100 justify-content-between d-flex navbar-expand-lg  navbar-dark">
+                   <div class="d-flex justify-content-between w-100 align-items-center">
+                    <a class="navbar-brand  mx-md-2 mx-lg-5 my-md-3" href="#">
+                        <img src="img/logo.png" class="site-logo" alt="">
+                    </a>
+                    <button class="navbar-toggler d-block d-lg-none d-flex align-items-center justify-content-center pt-md-5 pr-md-5 border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <div id="nav-icon3">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                    </button>
+                   </div>
+
+                    <div class=" collapse navbar-collapse align-items-start justify-content-end" id="navbarSupportedContent">
+                        <ul class="navbar-nav p-0 mt-5 mt-lg-0 pl-lg-4">
+                            <li class="nav-item px-0   text-center active-link">
+                                <a class="nav-link nav-link-hover pt-0 borderBottom current-section" href="#home">Home</a>
+                            </li>
+
+                            <li class="nav-item px-0   text-center">
+                                <a class="nav-link nav-link-hover pt-0 " href="#want-to-eat">Menu</a>
+                            </li>
+
+                            <li class="nav-item px-0   text-center">
+                                <a class="nav-link nav-link-hover pt-0 " href="#recipes">Gallery</a>
+                            </li>
+
+                            <li class="nav-item px-0   text-center">
+                                <a class="nav-link nav-link-hover pt-0 " href="#feedback">Testiminals</a>
+                            </li>
+
+                            <li class="nav-item px-0  mr-0 mr-lg-4  text-center">
+                                <a class="nav-link nav-link-hover pt-0 " href="#contact">Contact Us</a>
+                            </li>
+
+                            <li class="nav-item px-1  btns d-none d-lg-block text-center">
+                                <a href="#"><img src="img/nav_search-btn.png" style="width: 29px;" class="m-4 mb-1" alt=""></a>
+                            </li>
+
+                            <li class="nav-item px-1  btns d-none d-lg-block text-center">
+                                <a href="#"><img src="img/nav_customer.png" style="width: 29px;" class="m-4 mb-1" alt=""></a>
+                            </li>
+
+                            <li class="nav-item px-1  btns  d-none d-lg-block text-center">
+                                <a href="#"><img src="img/nav-shop-bag.png" style="width: 29px;" class="m-4 mb-1" alt=""></a>
+                            </li>
+                        </ul>
+                        <div class=" d-block d-lg-none d-flex align-items-center mb-5 justify-content-around btns">
+                                <a href="#"> <img src="img/nav_search-btn.png" style="width: 29px;" class="m-4" alt=""></a>
+                                <a href="#"> <img src="img/nav_customer.png" style="width: 29px;" class="m-4" alt=""></a>
+                                <a href="#"> <img src="img/nav-shop-bag.png" style="width: 29px;" class="m-4" alt=""></a>
+                        </div>
+                    </div>
+                </nav> 
+              
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="home container-fluid w-100 p-md-0">
+        <div class="row p-0 m-0">
+            <div class="container p-0">
+                <div class="row vh-100 p-0 px-md-5 px-md-0 ">
+                    <div class="col-12 p-0 col-md-6 d-flex align-items-center justify-content-center">
+                        <div class="home-text py-5 w-100 ">
+                            <h1 class=" wow fadeInLeft ani-delay-0 text-white ml-5 ml-md-0 mx-lg-5 mx-md-0 pt-5 party">Party Time!</h1>
+                            <div class="home-buynow  wow slideInDown ani-delay-1 home-text-bg my-5 py-3 px-5">
+                                <p class="text-white mb-0 font-weight-bolder home-text ">Buy any 2burgers <br>
+                                get 1.5L Pepsi Free
+                                </p>                  
+                            </div>
+                            <button class="btn ml-5 ml-md-0 mx-lg-5 mx-md-0 wow slideInLeft ani-delay-2 order-now arr">order now</button>
+                          
+                        </div>
+                    </div>
+                    <div class="col-0 col-md-6"></div> 
+                    <a href="#want-to-eat ">
+                        <div class="arrow wow fadeInDownBig ani-delay-3 ">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="want-to-eat">
+        <div id="want-t-eat-sub" class="want-to-eat container-fluid my-5">
+            <div class="row">
+                <div class="col-12 irrg1"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 my-5">
+                            <div class="text-center wte-main">
+                                <h4 class="wte wow bounceInDown">Want to eat?</h4>
+                                <p class="wte-tryout  wow slideInLeft text-black-50">Try out Most Delicious food and it ususally take minutes to deliver</p>
+                            </div>
+                        </div>
+                      
+                                <div class="col-6 col-sm-4 col-md-2  wow slideInDown">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="item-photo text-center">
+                                                <img src="img/latest_burger.png" class="item-img" alt="">
+                                                <p class="text-black">BURGER</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-2  wow slideInDown">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="item-photo text-center">
+                                                <img src="img/pizza.jpg" class="item-img" alt="">
+                                                <p class="text-black">PIZZA</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-2  wow bounceInDown">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="item-photo text-center">
+                                                <img src="img/fries.png" class="item-img p-3" alt="">
+                                                <p class="text-black">FAST FOOD</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-2  wow slideInRight">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="item-photo text-center">
+                                                <img src="img/cupcake.png" class="item-img" alt="">
+                                                <p class="text-black">CUP CAKE</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-2  wow fadeInDown">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="item-photo text-center">
+                                                <img src="img/SANDWICH.jpeg" class="item-img" alt="">
+                                                <p class="text-black">SANDWICH</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-4 col-md-2  wow fadeInDown">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="item-photo text-center">
+                                                <img src="img/SPAGHETTI.jpeg" class="item-img" alt="">
+                                                <p class="text-black">SPAGHETTI</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>     
+    </div>
+
+
+    <div id="deliver" class="deliver container-fluid" my-5>
+        <div class="row">
+            <div class="col-12 irrg2"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5 wow slideInLeft">
+                        <div class="delivery-man d-flex justify-content-center align-items-center">
+                            <img src="img/shutterstock_334037675.png" class="w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-7 d-flex justify-content-center align-items-center ">
+                        <div class="w-100">
+                            <div class="d-flex wow flipInY align-items-center deli-grante-main">
+                                <div class="deli-grante ">
+                                    <h4 class="deli-text p-5 w-100 font-weight-bold">We Gurantee <br> 30 Minutes Delivery</h4>
+                                </div> 
+                                
+                            </div>
+                            <p class="px-5 wow bounceInDown pb-4" style="font-size: large; color: white;">If you're having a meeting,working late at <br> night and an extra push.</p>
+     
+                        </div>
+                   </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section id="recipes">
+        <div id="recipes-sub" class="recipes container-fluid my-5">
+            <div class="row">
+                <div class="col-12 irrg3"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 my-5">
+                            <div class="text-center wte-main">
+                                <h4 class="wte wow bounceInLeft">Our Most Popular Recipes</h4>
+                                <p class="wte-tryout wow fadeInDown text-black-50">Try out Most Delicious food and it ususally take minutes to deliver</p>
+                            </div>
+                        </div>
+                      
+                                <div class="col-12 col-sm-6 col-md-4 mb-5 food-card-main wow flipInY">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="food-card">
+                                                <img src="img/1.png" class="food-img w-100" alt="">
+                                            </div>
+                                            <div class="irrg4 col-12"></div>
+                                            <div class="p-3">
+                                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#fa0" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                                <p class="d-inline p-1">7.5 Rating</p>
+                                                <h4>Attribute Varation</h4>
+                                                <p class="text-black-50">Chicken,tomato,green salat,pita,ketchup,...</p>
+                                                <button class="btn bg-yellow"><i class="fa fa-shopping-cart p-2"></i> Add to Cart</button><p class="d-inline p-2 text-color">$10.99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-12 col-sm-6 col-md-4 mb-5 food-card-main wow slideInLeft">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="food-card">
+                                                <img src="img/shutterstock_136631573.png" class="food-img w-100" alt="">
+                                            </div>
+                                            <div class="irrg4 col-12"></div>
+                                            <div class="p-3">
+                                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#fa0" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                                <p class="d-inline p-1">7.5 Rating</p>
+                                                <h4>Attribute Varation</h4>
+                                                <p class="text-black-50">Chicken,tomato,green salat,pita,ketchup,...</p>
+                                                <button class="btn bg-yellow"><i class="fa fa-shopping-cart p-2"></i> Add to Cart</button> <p class="d-inline p-2 text-color">$10.99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-12 col-sm-6 col-md-4 mb-5 food-card-main wow slideInRight">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="food-card">
+                                                <img src="img/background-burgers-home-top.png" class="food-img w-100" alt="">
+                                            </div>
+                                            <div class="irrg4 col-12"></div>
+                                            <div class="p-3">
+                                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#fa0" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                                <p class="d-inline p-1">7.5 Rating</p>
+                                                <h4>Attribute Varation</h4>
+                                                <p class="text-black-50">Chicken,tomato,green salat,pita,ketchup,...</p>
+                                                <button class="btn bg-yellow"><i class="fa fa-shopping-cart p-2"></i> Add to Cart</button><p class="d-inline p-2 text-color">$10.99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-12 col-sm-6 col-md-4 mb-5 food-card-main wow flipInX">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="food-card">
+                                                <img src="img/news_image1-min.png" class="food-img w-100" alt="">
+                                            </div>
+                                            <div class="irrg4 col-12"></div>
+                                            <div class="p-3">
+                                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#fa0" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                                <p class="d-inline p-1">7.5 Rating</p>
+                                                <h4>Attribute Varation</h4>
+                                                <p class="text-black-50">Chicken,tomato,green salat,pita,ketchup,...</p>
+                                                <button class="btn bg-yellow"><i class="fa fa-shopping-cart p-2"></i> Add to Cart</button><p class="d-inline p-2 text-color">$10.99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-12 col-sm-6 col-md-4 mb-5 food-card-main wow bounceInLeft">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="food-card">
+                                                <img src="img/news_image2-min.png" class="food-img w-100" alt="">
+                                            </div>
+                                            <div class="irrg4 col-12"></div>
+                                            <div class="p-3">
+                                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#fa0" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                                <p class="d-inline p-1">7.5 Rating</p>
+                                                <h4>Attribute Varation</h4>
+                                                <p class="text-black-50">Chicken,tomato,green salat,pita,ketchup,...</p>
+                                                <button class="btn bg-yellow"><i class="fa fa-shopping-cart p-2"></i> Add to Cart</button><p class="d-inline p-2 text-color">$10.99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-12 col-sm-6 col-md-4 mb-5 food-card-main wow bounceInRight">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="food-card">
+                                                <img src="img/news_image3-min.png" class="food-img w-100" alt="">
+                                            </div>
+                                            <div class="irrg4 col-12"></div>
+                                            <div class="p-3">
+                                                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="star" class="svg-inline--fa fa-star fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#fa0" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z"></path></svg>
+                                                <p class="d-inline p-1">7.5 Rating</p>
+                                                <h4>Attribute Varation</h4>
+                                                <p class="text-black-50">Chicken,tomato,green salat,pita,ketchup,...</p>
+                                                <button class="btn bg-yellow"><i class="fa fa-shopping-cart p-2"></i> Add to Cart</button><p class="d-inline p-2 text-color">$10.99</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="col-12 mb-5 wow bounceInUp">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <button class="btn font-weight-bold show-menu-btn">Show Our Menu</button>
+                                    </div>
+                                </div>
+                         </div> 
+                        </div>
+            </div>
+        </div>
+    
+        <div id="happy-hour" class="happy-hour container-fluid mt-5">
+            <div class="row">
+                <div class="irrg6 col-12"></div>
+                <div class="container">
+                    <div class="row vh-100">
+                            <div class="col-12 col-md-6 d-flex justify-content-start align-items-center">
+                                <div class="happy-hour-text">
+                                    <div class="p-1 p-md-2">
+                                        <h4 class=" font-weight-normal wow fadeInDown text-white party">Happy Hours</h4>
+                                    <p class="home-buynow text-white wow slideInLeft">Friday 5pm-8pm</p>
+                                    <p class="home-buynow text-white wow slideInLeft">40% of All premium pizzas</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="col-3 p-xs-0 text-center wow bounceInRight">
+                                            <p id="date" class="p-0 time-text">3</p>
+                                            <p class="text-white font-weight-50">Days</p>
+                                        </div>
+        
+                                        <div class="col-3 p-xs-0 text-center wow bounceInRight">
+                                            <p id="hour" class="p-0 time-text">11</p>
+                                            <p class="text-white font-weight-50">Hours</p>
+                                        </div>
+        
+                                        <div class="col-3 p-xs-0 text-center wow bounceInRight">
+                                            <p id="minute" class="p-0 time-text">0</p>
+                                            <p class="text-white font-weight-50">Minutes</p>
+                                        </div>
+        
+                                        <div class="col-3 p-xs-0 text-center wow bounceInRight">
+                                            <p id="second" class="p-0 time-text wow fadeIn">9</p>
+                                             <p class="text-white font-weight-50">Seconds</p>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="feedback">
+    <div id="feedback-sub" class="feedback container-fluid my-5">
+        <div class="row">
+            <div class="col-12 irrg1"></div>
+            <div class="container min-vh-100 mb-5">
+                <div class="row">
+                    <div class="col-12 my-5 ">
+                        <div class="text-center wte-main">
+                            <h4 class="wte wow bounceInDown">Clinent Testimonials</h4>
+                            <p class="wte-tryout wow slideInDown text-black-50">Try out Most Delicious food and it ususally take minutes to deliver</p>
+                        </div>
+                    </div>
+              
+
+                        <div class="col-12 col-md-6 d-flex justify-content-start align-items-center ">
+                            <div class="customer-img wow slideInLeft">
+                                <img class="w-100" src="img/beautiful-young-healthy-woman-holds-tasty-big-burger-with-beef-cutlet-concept-nourishing-food_152625-788.png" alt="">
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 p-5 d-flex align-items-center">
+                            <div class="feedback wow slideInRight">
+                                <i class="fa fa-quote-left"></i>
+                                <p class="text-black feedback-p1 py-5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt</p>
+                                <h4 class="font-weight-50 mb-0 line-main wow slideInLeft text-center">Nina Margaret <hr width="50px" class="mx-3" color="#A80E0E"></h4>
+                                <P class="text-black-50">CEO,ABC Company</P>
+                            </div>
+                        </div>
+                       </div>                   
+             </div>
+          </div>
+       </div>
+               
+    <div id="advantages" class=" advantages container-fluidc p-5">
+        <div class="col-12 irrg7"></div>
+        <div class="row py-5 my-5 d-flex justify-content-center align-items-center">
+            
+                    <div class="col-12 col-sm-6 col-md-3 wow flipInY">
+                        <div class="card  px-0 adv-card shadow mt-4">
+                            <div class="card-body px-0 mx-2">
+                                <div class=" text-center p-4 ">
+                                    <img src="img/Path 4276@1X.png" alt="">
+                                </div>
+                                <div class="adv-text text-center">
+                                    <h4>Free shipping on <br> first order</h4>
+                                    <hr width="50px"  class=" hr-h my-3" color="#fa0">
+                                    <p class="text-black-50">Sign up for updates and get <br> free shipping</p>
+                                </div>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-3 wow flipInY">
+                        <div class="card py-2 px-0 adv-card shadow mt-4">
+                            <div class="card-body px-0 mx-2">
+                                <div class=" text-center p-4 ">
+                                    <img src="img/XMLID_386_@1X.png"  alt="">
+                                   
+                                </div>
+                                <div class="adv-text text-center">
+                                    <h4>30 minutes <br> delivery</h4>
+                                    <hr width="50px"  class=" hr-h my-3" color="#fa0">
+                                    <p class="text-black-50"> Everything you order will be <br> quickly delivered to your door.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3 wow flipInY">
+                        <div class="card py-2 px-0 adv-card shadow mt-4">
+                            <div class="card-body px-0 mx-2">
+                                <div class=" text-center p-4 ">
+                                    <img src="img/Path 4281@1X.png" alt="">
+                                </div>
+                                <div class="adv-text text-center">
+                                    <h4>Best quality <br> guarantee</h4>
+                                    <hr width="50px"  class=" hr-h my-3" color="#fa0">
+                                    <p class="text-black-50">We use only the best <br>ingredients to cook the tasty<br>fresh food for you. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-sm-6 col-md-3 wow flipInY">
+                        <div class="card py-2 px-0 adv-card shadow mt-4">
+                            <div class="card-body px-0 mx-2">
+                                <div class=" text-center p-4 ">
+                                    <img src="img/Path 4285@1X.png" alt="">
+                                </div>
+                                <div class="adv-text text-center">
+                                    <h4>Variety of <br>dishes</h4>
+                                    <hr width="50px"  class=" hr-h my-3" color="#fa0">
+                                    <p class="text-black-50">In our menu you’ll find a wide <br>variety of dishes, desserts, and<br> drinks</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+        </div>
+    </div>
+    </section>
+
+    <section id="contact">
+    <div id="contact-sub" class="contact container-fluid">
+        <div class="row">
+            <div class="col-12 col-md-6 contact-row d-flex align-items-center justify-content-center">
+                <div class="contact-info m-5">
+                    <button class="btn advantages wow bounceInLeft m-3 pb-0 text-white"><h5 class="text-center">Call Us</h5></button>
+                    <h4 class="text-white  wow slideInLeft fs-50">1-234-567-890</h4>
+                    <div class="d-flex justify-content-start align-items-center wow slideInLeft">
+                        <img src="img/clock.png" class="p-4" alt="">
+                        <p class="text-white fs-20">mon-thu: 11.00 – 23.00 <br> sat: 12.00 – 23.00 | sun: 12.00 – 21.00</p>
+                    </div>
+                    <hr width="100%"  class="my-3" color="#bfbfc0">
+                    <div class="d-flex align-items-center justify-content-start wow slideInLeft">
+                        <img src="img/placeholder.png" class="p-4" alt="">
+                        <p class="text-white fs-20">123 East 456th Street,<br> New York City NY 10065</p>
+                    </div>
+                    <div class="social-icon d-flex justify-content-start wow bounceInDown">
+                        <i class="fa fa-facebook p-3 m-2 sicon"></i>
+                        <i class="fa fa-twitter p-3 m-2 sicon"></i>
+                        <i class="fa fa-instagram p-3 m-2 sicon"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 map wow fadeInRight">
+                <div class="contact-map">
+                    <img src="img/Path 4290@1X.png" class="map-icon" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" class="footer container-fluid">
+        <div class="row">
+            <div class="container">
+                <div class="row d-flex align-items-center justify-content-center">
+                   <div class="col-12 col-md-7 col-lg-5  d-flex justify-content-center align-items-center">
+                    <div class="">
+                        <img src="img/Group 1358@1X.png" class=" wow slideInLeft site-logo m-5" alt="">
+                        <p class=" wow slideInLeft">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo</p>
+                        <div class=" wow bounceInDown">
+                            <img src="img/39223.png" class="p-2 " alt="">
+                            <img src="img/visa-1-logo-png-transparent.png" class="py-2 " alt="">
+                            <img src="img/25LV2rTnjZkQJHcvY8XBMM4Ws.png" class="py-2 " alt="">
+                            <img src="img/38980.png" class="p-2 " alt="">
+                            <img src="img/ForPRINT_logomarkPrimary_GooglePay_White_266x121.png"  class="p-2 bg-dark" alt="">
+                            <img src="img/applepay.png" class="p-2 " alt="">
+                        </div>
+                    </div>
+                   </div>
+                   <div class="col-12  col-md-5 col-lg-3 d-flex justify-content-center align-items-center">
+                      
+                         <div class="">
+                            <div class="col-12">
+                                <h4 class="link-head wow fadeInDown text-uppercase py-2">Useful links</h4>
+                                <hr width="50px"  class="m-0 hr-h" color="#fa0">
+                               </div>
+                             <div class="d-flex justify-content-center align-items-center">
+                                     
+                               <div class="col-6 my-5 mx-0">
+                                <p class="text-black-50 py-1">About</p>
+                                <p class="text-black-50 py-1">Menu</p>
+                                <p class="text-black-50 py-1">Testimonials</p>
+                                <p class="text-black-50 py-1">ContactUs</p>
+                            </div>
+                            <div class="col-6 my-5 mx-0">
+                             <p class="text-black-50 py-1">About</p>
+                             <p class="text-black-50 py-1">Menu</p>
+                             <p class="text-black-50 py-1">Testimonials</p>
+                             <p class="text-black-50 py-1">ContactUs</p>
+                       
+                            </div>
+                         </div>
+                  </div>
+                   </div>
+                   <div class="col-12  col-md-12 col-lg-4 ">
+                    <div class="">
+                       
+                        <div class="col-12 instagram-feed">
+                            <h4 class="link-head wow fadeInDown text-uppercase py-2">instagram feed</h4>
+                            <hr width="50px"  class="m-0 hr-h i-hr" color="#fa0">
+                         </div>
+                     
+                         <div class="d-flex justify-content-center align-items-center text-center">
+                                 
+                           <div class="col-12 my-5 my-md-0 my-lg-5 px-0">
+                            
+                            <img src="img/news_image-1.png" class="m-1 ml-0 wow fadeInRight" alt="">
+                            <img src="img/news_image-2.png" class="m-1 ml-0 wow fadeInLeft" alt="">
+                            <img src="img/news_image-3.png" class="m-1 ml-0 wow fadeInRight" alt="">
+                            <img src="img/slide-bg-1.png"  class="m-1 ml-0 wow fadeInLeft" alt="">
+                            <img src="img/h5-slide1.png"  class="m-1 ml-0 wow fadeInRight" alt="">
+                            <img src="img/background-burgers-home-top-1.png"  class="m-1 ml-0 wow fadeInLeft" alt="">
+                            </div>
+                     </div>
+                   </div>
+                </div>
+
+                <div class="col-12 wow bounceInDown text-center py-2" style="animation-delay: 0.4s;">
+                    <p style="color:black;">© 2020, Hot Burgers. All rights reserved by <span style="color: #a80e0e;">Noel.</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+    
+
+
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="vendor/wow/wow.js"></script>
+    <script src="vendor/way_point/jquery.waypoints.min.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
